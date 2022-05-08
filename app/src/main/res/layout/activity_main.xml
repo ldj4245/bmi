@@ -5,30 +5,46 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    >
-
-    <TextView
-        android:text="신장"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <EditText
-        android:inputType="number"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+    android:padding="16dp"
+    tools:context=".MainActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="체중"
-        />
+        android:text="@string/height"
+        android:textSize="20sp"
+        android:textColor="@color/custom_black"
+        android:textStyle="bold"/>
 
     <EditText
+        android:id="@+id/heightEditText"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        
-        />
+        android:inputType="number" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:textColor="@color/custom_black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/weight" />
+
+    <EditText
+        android:id="@+id/WeightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/resultButton"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:text="확인하기" />
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>
