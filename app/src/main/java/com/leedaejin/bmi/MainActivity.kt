@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
 
         resultButton.setOnClickListener {
-
+            //예외처리 먼저 하기!
             if(heightEditText.text.isEmpty() || weightEditText.text.isEmpty()){
                 Toast.makeText(this,"빈 값이 있습니다.",Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
